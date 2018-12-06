@@ -20838,14 +20838,18 @@ a.text-dark:focus {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
 }
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("/../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("/../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("/../fonts/PlayfairDisplay-Regular.otf") format("opentype");
+  src: url(../fonts/PlayfairDisplay-Regular.woff2?0298d9dbb8be12ff710b884189cccd79);
   font-style: normal;
   font-weight: 400;
+}
+
+.contenedor-principal {
+  padding: 5% 10%;
 }
 
 .cabecera {
@@ -20862,13 +20866,29 @@ body {
 
 .cabecera__titular {
   color: #FFF;
-  font-family: 'Playfair Display';
+  font-family: 'PlayfairDisplay';
   text-transform: uppercase;
 }
 
 .cabecera__titular h1 {
-  font-family: "Playfair Display";
+  font-family: "PlayfairDisplay";
   font-style: normal;
   font-weight: 400;
+}
+
+.blog__meta-info li {
+  display: inline-block;
+}
+
+.icon-calendar {
+  border: 1px solid #eee;
+  border-radius: 50% 50%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.icon-calendar img {
+  width: 20px;
 }
 
