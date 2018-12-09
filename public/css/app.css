@@ -20843,13 +20843,32 @@ body {
 
 @font-face {
   font-family: "Playfair Display";
-  src: url(../fonts/PlayfairDisplay-Regular.woff2?0298d9dbb8be12ff710b884189cccd79);
+  src: url(../fonts/PlayfairDisplay-Regular.woff?bd0b969ffe683f201b072fbe5e40bdd9);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.woff?b4169ed63ec00f75bfceda139ef66dea);
   font-style: normal;
   font-weight: 400;
 }
 
 .contenedor-principal {
   padding: 5% 10%;
+}
+
+header .navbar-dark .navbar-toggler {
+  color: white;
+  border-color: black;
+}
+
+header .navbar-dark .navbar-toggler-icon {
+  background-image: url(../images/navicon.svg?9a77ffa6c1681bfdf9df00c0e44c01c7);
+}
+
+header .nav__logo {
+  background: url(../images/logo.svg?1d236b33c652d976213f44aed43d75d3) center no-repeat/auto 100% transparent;
+  text-indent: -10000px;
+  display: block;
+  min-width: 100px;
+  max-width: 100%;
 }
 
 .cabecera {
@@ -20867,13 +20886,19 @@ body {
 .cabecera__titular {
   color: #FFF;
   font-family: 'PlayfairDisplay';
-  text-transform: uppercase;
+  text-transform: lowercase;
+  text-align: center;
+  margin-top: 250px;
 }
 
 .cabecera__titular h1 {
-  font-family: "PlayfairDisplay";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
+}
+
+.barra-nav {
+  background-color: black;
 }
 
 .blog__meta-info li {
@@ -20890,5 +20915,88 @@ body {
 
 .icon-calendar img {
   width: 20px;
+}
+
+.share-and-comment {
+  margin: 5px 0;
+}
+
+.share-and-comment .iconos-sociales {
+  float: left;
+}
+
+.share-and-comment .iconos-sociales .icono-1,
+.share-and-comment .iconos-sociales .icono-2,
+.share-and-comment .iconos-sociales .icono-3 {
+  float: left;
+}
+
+.icono-1,
+.icono-2 {
+  border-radius: 150px;
+  color: #FFF;
+  width: calc(15% - 5px);
+  padding: 15px;
+  background: #707070;
+  margin-left: 5px;
+}
+
+.icono-1 a img,
+.icono-2 a img {
+  max-width: 100%;
+}
+
+.icono-3 {
+  width: calc(65% - 5px);
+  border-radius: 37.5px;
+  color: #FFF;
+  padding: 15px;
+  background: #707070;
+  margin-left: 5px;
+}
+
+.icono-3 img {
+  width: 15%;
+}
+
+.perfil-de-usuario {
+  background: #fff;
+  border: 0.3px solid #dadada;
+  margin: 100px 0 0 0;
+  padding: 100px 0;
+}
+
+.perfil-de-usuario__icono-persona-mb {
+  margin-top: -116px;
+}
+
+.perfil-de-usuario__icono-persona-dt {
+  margin-top: -114px;
+}
+
+.perfil-de-usuario__icono-persona-dt img {
+  width: 30%;
+}
+
+@media (max-width: 575px) {
+  .icono-3 img {
+    width: 10%;
+  }
+}
+
+@media (max-width: 991px) {
+  .perfil-de-usuario__icono-persona-dt {
+    display: none;
+  }
+
+  .perfil-de-usuario__descripcion {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .perfil-de-usuario__icono-persona-mb {
+    display: none;
+  }
 }
 

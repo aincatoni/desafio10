@@ -1,0 +1,113 @@
+.share-and-comment {
+
+margin: 5px 0;
+
+.iconos-sociales {
+   float: left;
+}
+
+.iconos-sociales  {
+  .icono-1, .icono-2, .icono-3 {
+    float: left;
+} 
+
+   }
+}
+
+
+.icono-1, .icono-2 {
+    
+    border-radius: 150px;
+    color: #FFF;
+    width:calc(15% - 5px);
+    padding: 15px;
+    background: rgb(112, 112, 112);
+    margin-left: 5px;
+
+    a img {
+
+        max-width: 100%; 
+    }
+
+} 
+
+
+.icono-3 {
+
+    width:calc(65% - 5px);
+    border-radius: 37.5px;
+    color: #FFF;
+    padding: 15px;
+    background: #707070;
+    margin-left: 5px;
+
+
+    img {
+        width: 15%;
+
+    }
+
+}
+
+.perfil-de-usuario {
+
+background: #fff;
+border: 0.3px solid #dadada;
+margin: 100px 0 0 0;
+padding: 100px 0;
+
+}
+
+.perfil-de-usuario__icono-persona-mb, {
+
+    margin-top: -116px; 
+
+}
+
+.perfil-de-usuario__icono-persona-dt {
+
+    margin-top: -114px;
+    
+    img {
+        width: 30%;
+    }
+}
+
+
+@include respond-below(xs) { 
+
+.icono-3 {
+
+    img {
+
+        width: 10%;
+    }
+}
+
+}
+
+@include respond-below(md) {
+
+.perfil-de-usuario__icono-persona-dt {
+
+    display: none
+}
+
+.perfil-de-usuario__descripcion {
+
+display: none;
+
+}
+
+
+}
+
+@include respond-above(md) {
+
+    .perfil-de-usuario__icono-persona-mb {
+    
+        display: none
+    }
+    
+    
+    }
